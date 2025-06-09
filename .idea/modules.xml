@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildSrc/larva.buildSrc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/buildSrc/larva.buildSrc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/larva-core/larva.larva-core.jsMain.iml" filepath="$PROJECT_DIR$/.idea/modules/larva-core/larva.larva-core.jsMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/larva-core/larva.larva-core.jvmMain.iml" filepath="$PROJECT_DIR$/.idea/modules/larva-core/larva.larva-core.jvmMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/larva-core/larva.larva-core.linuxX64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/larva-core/larva.larva-core.linuxX64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/larva-core/larva.larva-core.nativeMain.iml" filepath="$PROJECT_DIR$/.idea/modules/larva-core/larva.larva-core.nativeMain.iml" />
+    </modules>
+  </component>
+</project>

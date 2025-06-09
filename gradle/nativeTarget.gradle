@@ -1,0 +1,42 @@
+
+if (project.findProperty('disablekotlinnativetarget') != 'true') {
+    kotlin {
+
+        def osName = System.getProperty("os.name").toLowerCase()
+        def osArch = System.getProperty("os.arch").toLowerCase()
+
+        if (osName.contains("mac")) {
+            // Targets for physical devices, available on any Mac
+            iosArm64()
+            tvosArm64()
+            watchosArm64()
+            watchosDeviceArm64()
+
+            if (osArch == "aarch64") {
+                // Apple Silicon Mac specific targets
+                macosArm64()
+                iosSimulatorArm64()
+                tvosSimulatorArm64()
+                watchosSimulatorArm64()
+            } else {
+                // Intel Mac specific targets
+                macosX64()
+                iosX64()
+                tvosX64()
+                watchosX64()
+            }
+        } else if (osName.contains("linux")) {
+            linuxX64()
+        } else if (osName.contains("win")) {
+            mingwX64()
+        } else {
+            logger.warn("Unrecognized host operating system: " + System.getProperty("os.name") + ". No native target will be configured.")
+        }
+
+        sourceSets {
+            nativeMain {
+
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="larva-core-jvm">
+    <output-path>$PROJECT_DIR$/larva-core/build/libs</output-path>
+    <root id="archive" name="larva-core-jvm.jar">
+      <element id="module-output" name="larva.larva-core.jvmMain" />
+    </root>
+  </artifact>
+</component>
